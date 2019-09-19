@@ -11,5 +11,5 @@ public interface BookRepository {
     List<Book> findAll();
     Book findById(long id);
     Book save(Book book);
-    Book deleteById(long id);
+    boolean deleteById(long id);
 }
