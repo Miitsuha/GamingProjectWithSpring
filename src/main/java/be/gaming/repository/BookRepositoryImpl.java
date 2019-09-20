@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 @Repository
 public class BookRepositoryImpl implements BookRepository{
 
-    private List<Book> books;
+    private List<Book> books = new ArrayList<>();
 
     @Override
     public List<Book> findByTitle(String title) {
