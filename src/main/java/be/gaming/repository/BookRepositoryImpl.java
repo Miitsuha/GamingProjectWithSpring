@@ -15,7 +15,8 @@ public class BookRepositoryImpl implements BookRepository{
 
     @Override
     public List<Book> findByTitle(String title) {
-        return books.stream().filter(book -> book.getTitle().equals(title)).collect(Collectors.toList());
+        return books.stream().filter(book -> book.getTitle().equals(title))
+                .collect(Collectors.toList());
     }
 
     @Override
